@@ -1,26 +1,26 @@
 class Forge < Formula
   desc "Interactive CLI REPL for encoding, decoding, and conversion tasks"
   homepage "https://github.com/ktakada42/dev-forge"
-  version "0.1.0"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/dev-forge/releases/download/v0.1.0/forge-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "82ccde36f07df3524eac18031dcb05db2ecd0d7fcd11c581acd40a8b6be2db65"
+      url "https://github.com/ktakada42/dev-forge/releases/download/v1.0.0/forge-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "a270e81d9aab3bd417109095db79517d75b26224b4f36ad6b4373909c4aaf661"
     else
-      url "https://github.com/ktakada42/dev-forge/releases/download/v0.1.0/forge-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "663354d75008eb9b2373db2e6e4383446e0d1abd9291ea1c5921ddeec6d84d96"
+      url "https://github.com/ktakada42/dev-forge/releases/download/v1.0.0/forge-v1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "cb09c68b927bd2446cf5f57d36887ebcf96d8f9dbe55a47847b9dfb40610ae1f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/dev-forge/releases/download/v0.1.0/forge-v0.1.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "97fae506e05ccf1cbad907f0ec149a856eb92bcc19440ed2ce5c33685d517298"
+      url "https://github.com/ktakada42/dev-forge/releases/download/v1.0.0/forge-v1.0.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "52a6d3bbc19e9de7643d306eeaf5b950ab79a8cbadb20ddc842b102a7e4169aa"
     else
-      url "https://github.com/ktakada42/dev-forge/releases/download/v0.1.0/forge-v0.1.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "174a00825306006210d5d02fb87f7250aed799401149bc9768ef97f2b9c4440c"
+      url "https://github.com/ktakada42/dev-forge/releases/download/v1.0.0/forge-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "06f002f794a879d86da55f0ec00392cae39d14c657c173ce1ffd34d945f89726"
     end
   end
 
