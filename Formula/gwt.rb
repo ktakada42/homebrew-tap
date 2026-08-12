@@ -1,32 +1,34 @@
 class Gwt < Formula
   desc "Friendly git worktree manager with automatic paths, hooks and shell integration"
   homepage "https://github.com/ktakada42/gwt"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/gwt/releases/download/v1.2.0/gwt-v1.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e8ec691d630e9ca1c372720c2d01d15619f5b2c8fbc5ea1ddeb1dd81ad755b32"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.3.0/gwt-v1.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9a7a414779ce1c40a156948dd05471795350ff6402fa41d4bf11592480dc1ad0"
     else
-      url "https://github.com/ktakada42/gwt/releases/download/v1.2.0/gwt-v1.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "2cb1789aef6e7d1231b2203746207b72691758b6a0ccaeeb564876e9dd43c413"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.3.0/gwt-v1.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "0c7f83afaf3f19aaf9d64cd202224fd74fa10c2bf776be5b519995fe74e0743b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/gwt/releases/download/v1.2.0/gwt-v1.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "67cb02bf6f9ee57ebf8985d878c55030b7d6f763bf92a060c84e74ec22e7f9f0"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.3.0/gwt-v1.3.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "dcb27a8c46eb31b6118f38c1a9797637911e916d92336ec0f341832023aab6bc"
     else
-      url "https://github.com/ktakada42/gwt/releases/download/v1.2.0/gwt-v1.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "52b07c934d77cbb575ae6154f9f4785c1724dd99ece23182f7681d7d0900b9ff"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.3.0/gwt-v1.3.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "73ed9581cacf1d7f5fc5f3658869041adc864a7c730d05f511681c5df47e5e51"
     end
   end
 
   def install
     bin.install "gwt"
     generate_completions_from_executable(bin/"gwt", "completion")
+    system bin/"gwt", "man", "--out-dir", buildpath/"man"
+    man1.install Dir[buildpath/"man/*.1"]
   end
 
   def caveats
