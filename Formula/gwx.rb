@@ -4,10 +4,6 @@ class Gwx < Formula
   version "2.0.0"
   license "MIT"
 
-  # gwx was called gwt up to v1.4.1. This migrates an installed gwt
-  # on `brew upgrade` rather than leaving it frozen at the old name.
-  oldnames "gwt"
-
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ktakada42/gwx/releases/download/v2.0.0/gwx-v2.0.0-aarch64-apple-darwin.tar.gz"
