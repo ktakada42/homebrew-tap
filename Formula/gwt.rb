@@ -1,26 +1,26 @@
 class Gwt < Formula
   desc "Friendly git worktree manager with automatic paths, hooks and shell integration"
   homepage "https://github.com/ktakada42/gwt"
-  version "1.4.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/gwt/releases/download/v1.4.0/gwt-v1.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c2d44a64e811059977c6f0526a93450280a4716fafec51f71c77a2330a057011"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.4.1/gwt-v1.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "e1524ae1db461baadc81329dfeba70266973365533394cc61daeabcb445a6fd0"
     else
-      url "https://github.com/ktakada42/gwt/releases/download/v1.4.0/gwt-v1.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "252e7a666cd7ca3b7ce2e25f4f865fb9b5556fff57c47d8ea94287cd380f9529"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.4.1/gwt-v1.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "7b5bee75d7e697470062d8044099aa895a46c0e455a6399d6737daeb0a210ed2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/gwt/releases/download/v1.4.0/gwt-v1.4.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "34366597f547acdecc64198a815558163c3c96902fca0f3e3f4d51cf9ac2f824"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.4.1/gwt-v1.4.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "d1e50d13bcedf1ab0fcf3af65f5c864d243ea34c8872fdb8bd022e8d2647ff13"
     else
-      url "https://github.com/ktakada42/gwt/releases/download/v1.4.0/gwt-v1.4.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9ee2abf5af1e40d6d348e03c837b0db99d884ff5a9052ac1fe3ebc54ab1dfbe1"
+      url "https://github.com/ktakada42/gwt/releases/download/v1.4.1/gwt-v1.4.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "e8a4ecb10e06e38b3e0892c527aa2de51a5d3ff9cfef3bccf306b67a6d0b7986"
     end
   end
 
