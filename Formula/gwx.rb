@@ -1,26 +1,26 @@
 class Gwx < Formula
   desc "Friendly git worktree manager with automatic paths, hooks and shell integration"
   homepage "https://github.com/ktakada42/gwx"
-  version "2.2.1"
+  version "2.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/gwx/releases/download/v2.2.1/gwx-v2.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "8ff9c3d891e45e16a5efb12c4f24269d4e3ea9949b09e28aee8a8297b94c42aa"
+      url "https://github.com/ktakada42/gwx/releases/download/v2.2.2/gwx-v2.2.2-aarch64-apple-darwin.tar.gz"
+      sha256 "22bf978b54a426631eec722d91fa90dd9448389896b96146101361d40ba47079"
     else
-      url "https://github.com/ktakada42/gwx/releases/download/v2.2.1/gwx-v2.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "a7c1e3faace8ce278fbe9b869c775b41e83efb9ed7842c94b9114201aebc6b77"
+      url "https://github.com/ktakada42/gwx/releases/download/v2.2.2/gwx-v2.2.2-x86_64-apple-darwin.tar.gz"
+      sha256 "2c6f8820eeef35f3ba95dd81c0a8ec19d81d2893ece3f2c0c56bf2fa8ebf6cab"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ktakada42/gwx/releases/download/v2.2.1/gwx-v2.2.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4e51aadd6ec5ac92845e0c65f14e52730a376ccb5991ed35a19bd2951727dc0b"
+      url "https://github.com/ktakada42/gwx/releases/download/v2.2.2/gwx-v2.2.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8d39659bcddad2426bcf56fabdf27364551ed33c2f78f7912ea363e4e31822c0"
     else
-      url "https://github.com/ktakada42/gwx/releases/download/v2.2.1/gwx-v2.2.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b8ef43392b1f22fe8fb45ff966b86f7cfccfc927ce4a98e4978c634ce51ba7cd"
+      url "https://github.com/ktakada42/gwx/releases/download/v2.2.2/gwx-v2.2.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "eabafe712cb2f5e39572958fab3f9c88e656d9d803b98a1f08932f5e5ad170d4"
     end
   end
 
